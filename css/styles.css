@@ -201,6 +201,10 @@ img {
 
 .hero-section {
   background-color: var(--secondary-bg-cl);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/main-page/people-office.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   text-align: center;
   padding-top: 188px;
   padding-bottom: 188px;
@@ -278,6 +282,42 @@ img {
   padding: 32px 16px;
   background-color: var(--primary-bg-cl);
 
+}
+
+/* Customers styles */
+
+.customers-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.customers-list {
+  --items: 6;
+}
+
+.customers-item {}
+
+.customers-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 168px;
+  height: 88px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.customers-icon {
+  fill: #8e8f99;
+}
+
+.customers-link:hover {
+  border-color: #404BBF;
+}
+
+.customers-link:hover .customers-icon {
+  fill: #404BBF;
 }
 
 /**
