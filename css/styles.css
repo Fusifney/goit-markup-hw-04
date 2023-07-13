@@ -576,7 +576,7 @@ img {
   height: 100%;
   background-color: rgba(46, 47, 66, 0.40);
 
-  transition: opacity 250ms ease-out, visibility 250ms ease-out;
+  transition: opacity var(--anim), visibility var(--anim);
 }
 
 .backdrop.is-hidden {
@@ -589,16 +589,16 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%) scale(1);
 
   width: 408px;
-  height: 584px;
+  min-height: 584px;
   flex-shrink: 0;
   border-radius: 4px;
   background-color: var(--dairy, #FCFCFC);
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
 
-  transition: opacity 300ms ease-out 250ms, transform 300ms ease-out 250ms;
+  transition: opacity var(--anim) 250ms, transform var(--anim) 250ms;
 }
 
 .backdrop.is-hidden .modal {
@@ -618,14 +618,25 @@ img {
   width: 24px;
   height: 24px;
   flex-shrink: 0;
-  border-radius: 24px;
+  border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.10);
   background: var(--cornflower, #E7E9FC);
   padding: 0;
+
+  transition: background-color var(--anim), border var(--anim);
 }
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: #404bbf;
+  border: none;
+  fill: #ffffff;
+}
+
 
 .modal-icon {
   stroke: #2E2F42;
+  transition: fill var(--anim);
 }
 
 
