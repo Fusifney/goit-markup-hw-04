@@ -375,21 +375,23 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  color: #8e8f99;
   width: 168px;
   height: 88px;
   border: 1px solid #8e8f99;
   border-radius: 4px;
   flex-shrink: 0;
 
-  transition: border-color var(--anim);
+  transition: border-color var(--anim) color var(--anim);
 }
 
 .customers-icon {
-  fill: #8e8f99;
+  fill: currentColor;
 }
 
-.customers-link:hover {
+.customers-link:active,
+.customers-link:hover,
+.customers-link:focus {
   border-color: #404BBF;
 }
 
