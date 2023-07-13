@@ -382,7 +382,7 @@ img {
   border-radius: 4px;
   flex-shrink: 0;
 
-  transition: border-color var(--anim) color var(--anim);
+  transition: border-color var(--anim), color var(--anim);
 }
 
 .customers-icon {
@@ -392,6 +392,7 @@ img {
 .customers-link:active,
 .customers-link:hover,
 .customers-link:focus {
+  color: #404BBF;
   border-color: #404BBF;
 }
 
