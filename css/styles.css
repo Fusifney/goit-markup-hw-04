@@ -529,7 +529,7 @@ img {
 }
 
 .footer-contacts-list {
-  --indent-vertical: 16px;
+  gap: 16px;
 }
 
 .footer-contacts-link {
