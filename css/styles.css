@@ -422,7 +422,7 @@ img {
   border: 1px solid var(--pf-btn-border-cl);
   border-radius: 4px;
 
-  transition: color background-color border-color box-shadow var(--anim);
+  transition: color, background-color, border-color, box-shadow var(--anim);
 }
 
 .portfolio-btn:active,
