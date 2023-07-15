@@ -422,7 +422,7 @@ img {
   border: 1px solid var(--pf-btn-border-cl);
   border-radius: 4px;
 
-  transition: color, background-color, border-color, box-shadow var(--anim);
+  transition: color var(--anim), background-color var(--anim), border-color var(--anim), box-shadow var(--anim);
 }
 
 .portfolio-btn:active,
@@ -448,12 +448,13 @@ img {
   --indent-horizontal: 48px;
 }
 
-.potfolio-link {
+.portfolio-link {
   display: block;
   transition: box-shadow var(--anim);
 }
 
-.potfolio-link:hover {
+.portfolio-link:hover,
+.portfolio-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -494,7 +495,7 @@ img {
 
 .overlay-decription {
   color: var(--tertiary-cl);
-  padding: 40px 32px 164px 32px;
+  padding: 40px 32px;
 }
 
 /**
