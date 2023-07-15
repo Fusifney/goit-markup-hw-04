@@ -497,6 +497,10 @@ img {
   transform: translateY(0);
 }
 
+.portfolio-wrapper:hover .overlay {
+  transform: translateY(0);
+}
+
 .overlay-decription {
   color: var(--tertiary-cl);
   padding: 40px 32px;
