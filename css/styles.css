@@ -489,7 +489,8 @@ img {
   transition: transform var(--anim);
 }
 
-.portfolio-item:hover .overlay {
+.portfolio-item:hover .overlay,
+.portfolio-item:focus .overlay {
   transform: translateY(0);
 }
 
